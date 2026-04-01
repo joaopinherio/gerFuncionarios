@@ -8,11 +8,7 @@ public class Gerente extends Funcionario {
         this.adicionalSalario = adicionalSalario;
     }
 
-    @Override
-    public double calculaSalario() {
-        double salario = super.calculaSalario();
-        return salario + adicionalSalario;
-    }
+c
 
     @Override
     public String geraDescricao() {
@@ -29,5 +25,7 @@ public class Gerente extends Funcionario {
             return 0;
         else
             return salario * 0.25;
+
+
     }
 }
