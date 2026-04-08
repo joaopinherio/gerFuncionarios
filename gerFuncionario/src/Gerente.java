@@ -8,7 +8,6 @@ public class Gerente extends Funcionario {
         this.adicionalSalario = adicionalSalario;
     }
 
-c
 
     @Override
     public String geraDescricao() {

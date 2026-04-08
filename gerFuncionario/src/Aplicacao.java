@@ -11,10 +11,13 @@ public class Aplicacao {
 
     public void inicializa() {
         Gerente g;
+        Venderdor v;
         g = new Gerente("Maria",1111.11,11.11,"Mobile",1.1);
         equipe.addFuncionario(g);
         g = new Gerente("Pedro",222.22,22.22,"Web",2.2);
         equipe.addFuncionario(g);
+        v = new Vendedor("Joao", 2500, 300, 10);
+        equipe.addFuncionario(v);
     }
 
     public void executa() {
@@ -24,11 +27,15 @@ public class Aplicacao {
             System.out.println("Opcoes:");
             System.out.println("[0] Sair");
             System.out.println("[1] Consulta por nome");
+            System.out.println("[2] Cadastra um vendedor");
             System.out.print("Digite a opcao desejada: ");
             opcao = entrada.nextInt();
             entrada.nextLine();
             switch(opcao) {
                 case 1:
+                    consultaPorNome();
+                    break;
+                case 2:
                     consultaPorNome();
                     break;
                 case 0:
@@ -49,6 +56,13 @@ public class Aplicacao {
         else {
             System.out.println(f.geraDescricao());
         }
+    }
+
+    //Exercicio vendedor
+
+    private void cadastraVendedor(){
+        System.out.println("===================");
+        System.out.print("Digite o nome do funcionario: ");
     }
 
 }

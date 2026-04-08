@@ -1,8 +1,8 @@
 public class Vendedor extends Funcionario{
     private double comissao;
 
-
-    public Vendedor(double comissao) {
+    public Vendedor(String nome, double salarioBase, double descontos, double comissao) {
+        super(nome, salarioBase, descontos);
         this.comissao = comissao;
     }
 
@@ -21,8 +21,6 @@ public class Vendedor extends Funcionario{
             return salario * 0.1;
         else
             return salario * 0.2;
-
-        
     }
 
 
